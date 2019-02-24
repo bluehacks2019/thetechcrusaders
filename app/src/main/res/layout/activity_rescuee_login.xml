@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RescueeLoginActivity"
+    android:background="@drawable/eraloginred">
+
+    <RelativeLayout
+        android:id="@+id/progLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:drawable/editbox_dropdown_dark_frame"
+        android:visibility="gone">
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="232dp"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:layout_marginBottom="10dp"
+            android:background="@android:drawable/dialog_holo_light_frame"
+            android:hint="EMAIL ADDRESSS"
+            android:fontFamily="monospace"
+            android:drawablePadding="5dp"
+            android:padding="20dp"
+            android:drawableLeft="@drawable/ic_email_black_24dp"
+            android:textAlignment="center"
+            android:inputType="textEmailAddress" />
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:hint="PASSWORD"
+            android:padding="20dp"
+            android:fontFamily="monospace"
+            android:drawablePadding="5dp"
+            android:drawableLeft="@drawable/ic_lock_black_24dp"
+            android:textAlignment="center"
+            android:background="@android:drawable/dialog_holo_light_frame"
+            android:inputType="textPassword"
+            android:layout_marginBottom="20dp"/>
+        <Button
+            android:id="@+id/login"
+            android:layout_width="230dp"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            android:fontFamily="monospace"
+            android:padding="15dp"
+            android:background="@drawable/main_button_style"
+            android:drawableRight="@drawable/ic_send_black_24dp"
+            android:textAlignment="center"
+            android:textColor="#ffff"/>
+
+        <TextView
+            android:id="@+id/reg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:text="Not Registered yet? Click here."
+            android:textColor="#000"
+            android:textStyle="italic" />
+
+        <TextView
+            android:id="@+id/forgotPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:text="Forgot your password? Click here."
+            android:textColor="#ffff"
+            android:textStyle="italic"
+            android:visibility="gone"/>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

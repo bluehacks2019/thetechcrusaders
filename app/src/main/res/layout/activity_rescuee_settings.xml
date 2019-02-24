@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RescueeSettingsActivity"
+    android:padding="20sp">
+
+    <ImageView
+        android:id="@+id/profileimage"
+        android:layout_width="120sp"
+        android:layout_marginLeft="100dp"
+        android:layout_height="110sp"
+        android:src="@drawable/defaultpic"
+        android:scaleType="centerCrop"/>
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="132dp"
+        android:background="@null"
+        android:fontFamily="monospace"
+        android:drawableLeft="@drawable/ic_person_white_24dp"
+        android:drawablePadding="10dp"
+        android:hint="NAME" />
+
+    <EditText
+        android:id="@+id/phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="174dp"
+        android:background="@null"
+        android:fontFamily="monospace"
+        android:drawableLeft="@drawable/ic_call_white_24dp"
+        android:drawablePadding="10dp"
+        android:hint="CELLPHONE NUMBER"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/confirm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/main_button_style"
+        android:layout_above="@+id/back"
+        android:textColor="#FFF"
+        android:drawableRight="@drawable/ic_check_black_24dp"
+        android:padding="15dp"
+        android:drawablePadding="1dp"
+        android:textStyle="bold"
+        android:fontFamily="monospace"
+        android:layout_centerHorizontal="true"
+        android:text="CONFIRM" />
+
+    <Button
+        android:id="@+id/back"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/main_button_style"
+        android:layout_alignParentBottom="true"
+        android:textStyle="bold"
+        android:drawableRight="@drawable/ic_arrow_back_black_24dp"
+        android:padding="15dp"
+        android:drawablePadding="10dp"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="monospace"
+        android:textColor="#FFF"
+        android:layout_marginBottom="100dp"
+        android:text="BACK" />
+
+
+
+</RelativeLayout>

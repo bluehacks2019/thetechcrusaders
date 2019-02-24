@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "593065619467",
+    "firebase_url": "https://erabluehacks.firebaseio.com",
+    "project_id": "erabluehacks",
+    "storage_bucket": "erabluehacks.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:593065619467:android:e4c0c30c080da81f",
+        "android_client_info": {
+          "package_name": "com.example.arjay.erahacks"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "593065619467-fnnoga8m0oa3m61do9vo2a27g1uavjo5.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.arjay.erahacks",
+            "certificate_hash": "a3bf8c03d34bbcb96da14b35c0a05bfc09c913ae"
+          }
+        },
+        {
+          "client_id": "593065619467-e3947uu75jb647cd01740k8h766fha79.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAB_Yb3kvsjc7xuc_tnR63mV63MJvhKXog"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "593065619467-e3947uu75jb647cd01740k8h766fha79.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

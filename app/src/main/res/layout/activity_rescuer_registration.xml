@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RescuerRegistration"
+    android:background="@drawable/eraloginred">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:errorEnabled="true"
+            android:textColorHint="#000"
+            android:layout_marginTop="10dp">
+
+            <android.support.design.widget.TextInputEditText
+                android:layout_width="300dp"
+                android:layout_height="40dp"
+                android:hint="EMAIL ADDRESS"
+                android:fontFamily="monospace"
+                android:drawableLeft="@drawable/ic_email_black_24dp"
+                android:drawablePadding="10dp"
+                android:inputType="textEmailAddress"
+                android:textColor="#000"
+                android:textColorLink="@android:color/background_light" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:errorEnabled="true"
+            app:counterEnabled="true"
+            app:counterMaxLength="15"
+            app:passwordToggleEnabled="true"
+            android:textColorHint="#000"
+            android:layout_marginTop="10dp">
+
+            <android.support.design.widget.TextInputEditText
+                android:hint="PASSWORD"
+                android:layout_width="300dp"
+                android:textColor="#000"
+                android:drawableLeft="@drawable/ic_lock_black_24dp"
+                android:drawablePadding="10dp"
+                android:fontFamily="monospace"
+                android:layout_height="40dp"
+                android:inputType="textPassword"
+                android:maxLength="15"/>
+
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:errorEnabled="true"
+            android:textColorHint="#000"
+            android:layout_marginTop="10dp">
+
+            <android.support.design.widget.TextInputEditText
+                android:hint="CONTACT PERSON"
+                android:layout_width="300dp"
+                android:textColor="#000"
+                android:fontFamily="monospace"
+                android:drawableLeft="@drawable/ic_person_white_24dp"
+                android:drawablePadding="10dp"
+                android:layout_height="50dp"
+                android:inputType="text"/>
+
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/departmentName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:errorEnabled="true"
+            android:textColorHint="#000"
+            android:layout_marginTop="10dp">
+
+            <android.support.design.widget.TextInputEditText
+                android:hint="DEPARTMENT NAME"
+                android:layout_width="300dp"
+                android:textColor="#000"
+                android:drawableLeft="@drawable/ic_local_hospital_white_24dp"
+                android:drawablePadding="10dp"
+                android:fontFamily="monospace"
+                android:layout_height="40dp"
+                android:inputType="text"/>
+
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:errorEnabled="true"
+            app:counterMaxLength="11"
+            android:textColorHint="#000"
+            android:layout_marginTop="10dp">
+
+            <android.support.design.widget.TextInputEditText
+                android:hint="MOBILE NUMBER"
+                android:layout_width="300dp"
+                android:textColor="#000"
+                android:drawableLeft="@drawable/ic_call_white_24dp"
+                android:drawablePadding="10dp"
+                android:layout_height="40dp"
+                android:fontFamily="monospace"
+                android:inputType="phone"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="(Select Your Department)"
+            android:textColor="#000"
+            android:textAllCaps="true"
+            android:textStyle="bold"
+            android:fontFamily="monospace"
+            android:layout_margin="10dp"/>
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/police"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="monospace"
+                android:text="POLICE"
+                android:textSize="10dp"
+                android:drawableLeft="@drawable/icon_police"
+                android:drawablePadding="1dp"
+                android:textColor="#000"/>
+            <RadioButton
+                android:id="@+id/ambulance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="AMBULANCE"
+                android:textSize="10dp"
+                android:drawableLeft="@drawable/icon_ambulance_free"
+                android:drawablePadding="2dp"
+                android:fontFamily="monospace"
+                android:textColor="#000"/>
+            <RadioButton
+                android:id="@+id/fire"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="FIRE"
+                android:textSize="10dp"
+                android:drawableLeft="@drawable/icon_fire"
+                android:drawablePadding="1dp"
+                android:fontFamily="monospace"
+                android:textColor="#000"/>
+
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/regButton"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:background="@drawable/main_button_style"
+            android:text="Register"
+            android:drawableRight="@drawable/ic_person_black_24dp"
+            android:padding="15dp"
+            android:drawablePadding="10dp"
+            android:fontFamily="monospace"
+            android:layout_marginTop="20dp"
+            android:textColor="#FFF"/>
+        <TextView
+            android:id="@+id/backButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000"
+            android:fontFamily="monospace"
+            android:text="Already registered? Sign in here."
+            android:layout_marginTop="20dp"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

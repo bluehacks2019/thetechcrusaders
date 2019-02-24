@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RescueeRegistration"
+    android:background="@drawable/eraloginred">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:errorEnabled="true"
+            android:textColorHint="#000"
+            android:layout_marginTop="10dp">
+
+            <android.support.design.widget.TextInputEditText
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:hint="EMAIL ADDRESS"
+                android:fontFamily="monospace"
+
+                android:drawableLeft="@drawable/ic_email_black_24dp"
+                android:drawablePadding="10dp"
+                android:inputType="textEmailAddress"
+                android:textColor="#000"
+                android:textColorLink="@android:color/background_light" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:errorEnabled="true"
+            app:counterEnabled="true"
+            app:counterMaxLength="15"
+            android:drawableLeft="@drawable/ic_lock_black_24dp"
+            android:drawablePadding="10dp"
+            android:fontFamily="monospace"
+            app:passwordToggleEnabled="true"
+            android:textColorHint="#000"
+            android:layout_marginTop="10dp">
+
+            <android.support.design.widget.TextInputEditText
+                android:hint="PASSWORD"
+                android:layout_width="300dp"
+                android:textColor="#000"
+                android:drawableLeft="@drawable/ic_lock_black_24dp"
+                android:drawablePadding="10dp"
+                android:layout_height="50dp"
+                android:fontFamily="monospace"
+                android:inputType="textPassword"
+                android:maxLength="15"/>
+
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:errorEnabled="true"
+            android:textColorHint="#000"
+            android:layout_marginTop="10dp">
+
+            <android.support.design.widget.TextInputEditText
+                android:hint="NAME"
+                android:drawableLeft="@drawable/ic_person_white_24dp"
+                android:drawablePadding="10dp"
+                android:layout_width="300dp"
+                android:fontFamily="monospace"
+                android:textColor="#000"
+                android:layout_height="50dp"
+                android:inputType="text"/>
+
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:errorEnabled="true"
+            app:counterMaxLength="11"
+            android:textColorHint="#000"
+            android:layout_marginTop="10dp">
+
+            <android.support.design.widget.TextInputEditText
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:drawableLeft="@drawable/ic_contact_phone_black_24dp"
+                android:drawablePadding="10dp"
+                android:hint="MOBILE (ex. +63923******9)"
+                android:inputType="phone"
+                android:textColor="#000" />
+
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/phoneVerificationCode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:errorEnabled="true"
+            app:counterMaxLength="11"
+            android:textColorHint="#000"
+            android:layout_marginTop="10dp">
+
+            <android.support.design.widget.TextInputEditText
+                android:hint="VERIFICATION CODE"
+                android:layout_width="300dp"
+                android:fontFamily="monospace"
+                android:drawableLeft="@drawable/ic_verified_user_black_24dp"
+                android:drawablePadding="10dp"
+                android:textColor="#000"
+                android:layout_height="50dp"
+                android:inputType="number"/>
+
+        </android.support.design.widget.TextInputLayout>
+        <Button
+            android:id="@+id/btnVerifyPhone"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:fontFamily="monospace"
+            android:drawableRight="@drawable/ic_perm_phone_msg_black_24dp"
+            android:padding="15dp"
+            android:drawablePadding="10dp"
+            android:background="@drawable/main_button_style"
+            android:text="Get Phone Verification"
+            android:layout_marginTop="10dp"
+            android:textColor="#ffff"/>
+        <Button
+            android:id="@+id/verifyPhone"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:drawableRight="@drawable/ic_verified_user_white_24dp"
+            android:padding="15dp"
+            android:drawablePadding="10dp"
+            android:fontFamily="monospace"
+            android:background="@drawable/main_button_style"
+            android:text="Verify phone"
+
+
+            android:layout_marginTop="10dp"
+            android:textColor="#ffff"/>
+
+        <Button
+            android:id="@+id/regButton"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:background="@drawable/main_button_style"
+            android:text="Register"
+            android:drawableRight="@drawable/ic_person_black_24dp"
+            android:padding="15dp"
+            android:drawablePadding="10dp"
+            android:fontFamily="monospace"
+            android:layout_marginTop="10dp"
+            android:textColor="#ffff"/>
+        <TextView
+            android:id="@+id/backButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000"
+            android:fontFamily="monospace"
+            android:text="Already registered? Sign in here."
+            android:layout_marginTop="10dp"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

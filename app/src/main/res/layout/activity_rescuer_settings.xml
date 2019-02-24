@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RescueeSettingsActivity"
+    android:background="@drawable/eraloginred"
+    android:padding="20sp">
+
+    <ImageView
+
+        android:src="@drawable/defaultpic"
+        android:id="@+id/profileimage"
+        android:layout_width="120sp"
+        android:layout_marginLeft="100dp"
+        android:layout_height="110sp"
+        android:scaleType="fitXY"/>
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="132dp"
+        android:fontFamily="monospace"
+        android:drawableLeft="@drawable/ic_person_white_24dp"
+        android:drawablePadding="10dp"
+        android:background="@null"
+        android:hint="NAME" />
+
+    <EditText
+        android:id="@+id/phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="174dp"
+        android:background="@null"
+        android:hint="CELLPHONE NUMBER"
+        android:fontFamily="monospace"
+        android:drawableLeft="@drawable/ic_call_white_24dp"
+        android:drawablePadding="10dp"
+        android:inputType="number" />
+
+
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/confirm"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/police"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="monospace"
+            android:text="POLICE"
+            android:textSize="7.5dp"
+            android:drawableLeft="@drawable/icon_police"
+            android:drawablePadding="1dp" />
+
+        <RadioButton
+            android:id="@+id/ambulance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="AMBULANCE"
+            android:textSize="7.5dp"
+            android:drawableLeft="@drawable/icon_ambulance_free"
+            android:drawablePadding="1dp"
+            android:fontFamily="monospace" />
+
+        <RadioButton
+            android:id="@+id/fire"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="FIRE"
+            android:textSize="7.5dp"
+            android:drawableLeft="@drawable/icon_fire"
+            android:drawablePadding="1dp"
+            android:fontFamily="monospace" />
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/confirm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/back"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/main_button_style"
+        android:textColor="#FFF"
+        android:drawableRight="@drawable/ic_check_black_24dp"
+        android:padding="15dp"
+        android:drawablePadding="1dp"
+        android:textStyle="bold"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="monospace"
+        android:text="CONFIRM" />
+
+    <Button
+        android:id="@+id/back"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:background="@drawable/main_button_style"
+        android:drawableRight="@drawable/ic_arrow_back_black_24dp"
+        android:padding="15dp"
+        android:drawablePadding="10dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="monospace"
+        android:textColor="#FFF"
+        android:layout_marginBottom="59dp"
+        android:text="BACK" />
+
+
+
+</RelativeLayout>

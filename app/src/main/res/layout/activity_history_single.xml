@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".HistorySingleActivity"
+    android:background="@drawable/loginbgera"
+    android:focusableInTouchMode="true">
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="180dp" />
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10sp"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/rideDate"
+                android:textColor="#FFF"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10sp" />
+
+            <TextView
+                android:id="@+id/tvRequestTimeDate"
+                android:layout_width="match_parent"
+                android:textColor="#FFF"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rideDate"
+                android:layout_marginBottom="10sp" />
+
+            <TextView
+                android:id="@+id/pickupAddress"
+                android:textColor="#FFF"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/timeDifference"
+                android:layout_marginBottom="10sp" />
+
+            <TextView
+                android:id="@+id/contactPerson"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/pickupAddress"
+                android:layout_marginLeft="5dp"
+                android:text="Contact Person:"
+                android:fontFamily="monospace"
+                android:textColor="#ffff"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/userImage"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_below="@id/contactPerson"
+                android:layout_margin="5dp"
+                android:src="@drawable/defaultpic" />
+
+            <TextView
+                android:id="@+id/username"
+                android:textColor="#FFF"
+                android:layout_width="230dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="149dp"
+                android:fontFamily="sans-serif-condensed"
+                android:text="name" />
+
+            <TextView
+                android:id="@+id/userphone"
+                android:layout_width="230dp"
+                android:textColor="#FFF"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="183dp"
+                android:fontFamily="sans-serif-condensed"
+                android:text="phone" />
+
+            <TextView
+                android:id="@+id/rideDesctv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/userImage"
+                android:layout_margin="5dp"
+                android:text="RIDE DESCRIPTION RESCUER / RESCUEE REPORTS"
+                android:textColor="#ffff"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/descriptionPic"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_below="@+id/rideDesctv"
+                android:layout_margin="5dp"
+                android:src="@drawable/photo" />
+
+            <EditText
+                android:id="@+id/desc"
+                android:layout_width="230dp"
+                android:layout_height="44dp"
+                android:layout_alignBottom="@+id/descriptionPic"
+                android:layout_alignParentEnd="true"
+                android:textColor="#FFF"
+                android:fontFamily="sans-serif-condensed"
+                android:inputType="textMultiLine"
+                android:text="description" />
+
+            <Button
+                android:id="@+id/save"
+                android:layout_width="120dp"
+                android:layout_height="35dp"
+                android:layout_below="@+id/descriptionPic"
+                android:background="@drawable/main_button_style"
+                android:text="SAVE"
+                android:layout_marginBottom="10dp"
+                android:padding="5dp"
+                android:drawableRight="@drawable/ic_save_black_24dp"
+                android:textColor="#ffff" />
+
+            <TextView
+                android:id="@+id/tvCallerDetails"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/save"
+                android:layout_margin="5dp"
+                android:text="Caller Details:"
+                android:textColor="#ffff"
+                android:fontFamily="monospace"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/rescueePic"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_below="@id/tvCallerDetails"
+                android:layout_margin="5dp" />
+
+            <TextView
+                android:id="@+id/rescueeName"
+                android:layout_width="230dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignStart="@+id/username"
+                android:layout_below="@+id/tvCallerDetails"
+                android:layout_marginTop="10dp"
+                android:textColor="#FFF"
+                android:fontFamily="sans-serif-condensed"
+                android:text="name" />
+
+            <TextView
+                android:id="@+id/phoneOfRescuee"
+                android:layout_width="230dp"
+                android:layout_height="wrap_content"
+                android:textColor="#FFF"
+                android:layout_alignStart="@+id/rescueeName"
+                android:layout_below="@+id/rescueeName"
+                android:layout_marginTop="10dp"
+                android:text="phone" />
+
+            <TextView
+                android:id="@+id/timeDifference"
+                android:layout_width="230dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignStart="@+id/rescueeName"
+                android:layout_below="@+id/tvRequestTimeDate"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"
+                android:text="Response time: "
+                android:fontFamily="monospace"
+                android:textColor="#ffff" />
+
+
+            <TextView
+                android:id="@+id/rescuerReport"
+                android:layout_width="230dp"
+                android:textColor="#FFF"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignTop="@+id/descriptionPic"
+                android:text="Rescuer's report"
+                android:textStyle="bold" />
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>
