@@ -6,15 +6,15 @@ Members:
 	Francisco, Alvin C.
 	Galang Jr., Rolando A.
 	Conda, Neil Clairence B.
-	Swayze, Patrick Acabo B.
+	Acabo, Patrick Swayze B.
 
 
 About ERA: 
 
 I. Application Description:
 
-	Since our theme is self care for student, we created an application which focuses on how they will took care of their security and safetiness specially when emergency occurs. It allows you to send a request on the nearest rescuer within the area. Users whom find themselves in an unknown location that canít be described or provide an accurate address when emergency
-occurs,casualties which caused by the late arrival of rescuers and searching for an available nearby ambulance have been some of the hustling factor that faced by current fast pace community. This application will help the user to get the ambulance, fire truck and police mobiles without calling the departments to check for the availability of these emergency vehicles. The application reacts with just one tab on the button and it will send the notification of userís details and location via GPS to nearby rescuer. Then itís the rescuerís hand to approve the requested notification. Once the request is accepted, the GPS location will be send to the rescuer which will lead to the user location. It also helps to prevent fraud calls who misuse the application by diverting the service for better needy.
+	Since our theme is self care for student, we created an application which focuses on how they will took care of their security and safetiness specially when emergency occurs. It allows you to send a request on the nearest rescuer within the area. Users whom find themselves in an unknown location that can‚Äôt be described or provide an accurate address when emergency
+occurs,casualties which caused by the late arrival of rescuers and searching for an available nearby ambulance have been some of the hustling factor that faced by current fast pace community. This application will help the user to get the ambulance, fire truck and police mobiles without calling the departments to check for the availability of these emergency vehicles. The application reacts with just one tab on the button and it will send the notification of user‚Äôs details and location via GPS to nearby rescuer. Then it‚Äôs the rescuer‚Äôs hand to approve the requested notification. Once the request is accepted, the GPS location will be send to the rescuer which will lead to the user location. It also helps to prevent fraud calls who misuse the application by diverting the service for better needy.
 
 
 II. Installation Guide:
@@ -26,13 +26,13 @@ II. Installation Guide:
 
 	Run the App, at first you will see the splash screen page of the application. Wait until the Main Module appears.
 3. Rescuer/Rescue Log In
-	Enter the email and the password to log in on your account. If you donít have your account yet, you can click the ìNot registered yet? Click hereî button under the LOG IN button.
+	Enter the email and the password to log in on your account. If you don‚Äôt have your account yet, you can click the ‚ÄúNot registered yet? Click here‚Äù button under the LOG IN button.
 
 4. Rescuer/Rescue Registration
-	To have an account, please provide a reliable details/information on the textboxes below. You can get a verification code via gmail account. When the account is verified, click the ëRegisterí button and logged in.
+	To have an account, please provide a reliable details/information on the textboxes below. You can get a verification code via gmail account. When the account is verified, click the ‚ÄòRegister‚Äô button and logged in.
 
 5. Rescue Map
-	You can choose on what department you are trying to get a response. Once you tap the ëCall Emergencyí, it will send a request and notification to the nearest rescuer around the user. It will show the current location of both ends. 
+	You can choose on what department you are trying to get a response. Once you tap the ‚ÄòCall Emergency‚Äô, it will send a request and notification to the nearest rescuer around the user. It will show the current location of both ends. 
 	
 	5.1 Log out
 		You will sign out on your account and will not receive any notifications.
@@ -45,7 +45,7 @@ II. Installation Guide:
 		This is to change the information and the profile picture of the user.
 	
 	5.4 Refresh Map
-		To refresh the map for some instances that the GPS location doesnít reliable to the
+		To refresh the map for some instances that the GPS location doesn‚Äôt reliable to the
 	internet connection of the mobile phone
 
 6. Rescuer Map
